@@ -1,0 +1,34 @@
+\documentclass[11pt,a4paper,toc=listof]{scrreprt}
+
+\input{Befehle}
+\input{Packages}
+\input{Meta}
+
+\begin{document}
+
+\include{Inhalt/Deckblatt}
+
+% Die Seitennummerierung wird nun für die drei Teile des Dokuments
+% unterschiedlich dargestellt: groß römisch, arabisch und klein römisch.
+\pagenumbering{Roman}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+% Seitenumbruch und sofortige Ausgabe von "Gleitumgebungen" wie Grafiken.
+\clearpage
+\pagenumbering{arabic}
+
+\include{Inhalt/Inhaltselemente}
+% Diese Datei enthält Querverweise.
+\include{Inhalt/Biographie}
+\include{Inhalt/Schluesselszene}
+\include{Inhalt/Geplaenkel}
+
+\clearpage
+\pagenumbering{roman}
+
+\include{Inhalt/Anhang}
+
+\end{document}

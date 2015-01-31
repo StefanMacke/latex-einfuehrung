@@ -1,0 +1,10 @@
+% Man kann relativ einfach eigene Befehle in LaTeX definieren, die dann z.B. als
+% simple Abkürzungen...
+\newcommand{\WS}{William Shakespeare}
+
+% ...oder zur semantischen Auszeichnung des Textes dienen. Dadurch kann man dann
+% später durch eine Änderung an dieser einen Stelle alle "Rollen" anstatt fett
+% kursiv darstellen.
+\newcommand{\Rolle}[1]{\textbf{#1}}
+
+\newcommand{\Ausruf}[1]{\textit{#1}}

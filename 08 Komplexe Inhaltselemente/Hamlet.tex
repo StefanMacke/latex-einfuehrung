@@ -1,0 +1,23 @@
+% toc=listof sorgt dafür, dass Abbildungs- und Tabellenverzeichnis
+% mit einem Eintrag im Inhaltsverzeichnis aufgeführt werden.
+\documentclass[11pt,a4paper,toc=listof]{scrreprt}
+
+\input{Befehle}
+\input{Packages}
+\input{Meta}
+
+\begin{document}
+
+\include{Inhalt/Deckblatt}
+
+\tableofcontents
+% Hier werden Abbildungs- und Tabellenverzeichnis erzeugt.
+\listoffigures
+\listoftables
+
+\include{Inhalt/Inhaltselemente}
+\include{Inhalt/Biographie}
+\include{Inhalt/Schluesselszene}
+\include{Inhalt/Geplaenkel}
+
+\end{document}

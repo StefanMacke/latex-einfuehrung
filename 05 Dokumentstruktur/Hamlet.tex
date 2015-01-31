@@ -1,0 +1,28 @@
+\documentclass[11pt,a4paper]{scrreprt}
+
+% Der Befehl \input "inkludiert" eine andere *.tex-Datei an genau dieser Stelle,
+% als würde man deren Inhalt per Copy-and-Paste hier einfügen. Wir können in
+% dieser Datei alle bekannten LaTeX-Befehle nutzen. In diesem Fall wurden alle
+% Packages in die Datei "Packages.tex" ausgelagert. Die Dateiendung ".tex" muss
+% nicht mit angegeben werden.
+\input{Packages}
+
+% In "Meta.tex" werden einige Informationen zum Dokument definiert.
+\input{Meta}
+
+\begin{document}
+
+% Der Befehl \include macht fast das gleiche wie \input (Siehe:
+% http://texwelt.de/wissen/fragen/32/was-ist-der-unterschied-zwischen-include-and-input).
+% Er fügt zusätzlich jedoch einen Seitenumbruch ein und sollte eher für die
+% logische Gliederung des Dokuments verwendet werden und \input für technische
+% Anweisungen.
+% Wichtig: Dateinamen sollten nicht die Kapitel- oder Abschnittsnummern
+% enthalten, da sich diese später noch ändern können. Die Dateien sollten nach
+% ihrem Inhalt benannt sein, damit man sie später einfach umorganisieren kann,
+% indem man an dieser einen Stelle die Reihenfolge der \include-Befehle ändert.
+\include{Inhalt/Deckblatt}
+\include{Inhalt/Schluesselszene}
+\include{Inhalt/Geplaenkel}
+
+\end{document}

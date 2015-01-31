@@ -1,0 +1,35 @@
+\documentclass[11pt,a4paper,toc=listof,toc=bibliography]{scrreprt}
+
+\input{Befehle}
+\input{Packages}
+\input{Meta}
+
+\begin{document}
+
+\include{Inhalt/Deckblatt}
+
+\pagenumbering{Roman}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\clearpage
+\pagenumbering{arabic}
+
+\include{Inhalt/Inhaltselemente}
+\include{Inhalt/Biographie}
+\include{Inhalt/Schluesselszene}
+\include{Inhalt/Geplaenkel}
+
+\clearpage
+\pagenumbering{roman}
+
+% Hier wird das Literaturverzeichnis eingefügt.
+% Andere Stile: http://www.cs.stir.ac.uk/~kjt/software/latex/showbst.html
+\bibliographystyle{natdin}
+\bibliography{Bibliographie}
+
+\include{Inhalt/Anhang}
+
+\end{document}

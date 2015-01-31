@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Wed Jan 28 11:50:34 CET 2015
+markTmpDer=true
+builderNum=2
+outputDir=
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=Hamlet.tex
+outputFile=Hamlet.pdf
+langSpell=de
+markDer=true
+srcDir=

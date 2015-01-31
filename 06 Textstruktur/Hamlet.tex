@@ -1,0 +1,22 @@
+\documentclass[11pt,a4paper]{scrreprt}
+
+\input{Packages}
+\input{Meta}
+
+\begin{document}
+
+\include{Inhalt/Deckblatt}
+
+% Mit dieser einen Zeile wird ein komplettes Inhaltsverzeichnis inkl.
+% Nummerierung und Seitenzahlen anhand der Gliederung in den Inhaltsdateien
+% generiert.
+% LaTeX kompiliert das Dokument von nun an immer zweimal. Beim ersten Mal werden
+% die Informationen aus den Inhaltsdateien gelesen und erst beim zweiten Mal das
+% Inhaltsverzeichnis (das ja hier VOR dem Inhalt steht) erstellt.
+\tableofcontents
+
+\include{Inhalt/Biographie}
+\include{Inhalt/Schluesselszene}
+\include{Inhalt/Geplaenkel}
+
+\end{document}
